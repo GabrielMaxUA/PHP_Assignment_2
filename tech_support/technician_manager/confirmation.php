@@ -23,7 +23,7 @@ session_start(); // Start the session to access session variables
 
 <?php include("header.php"); ?>
 <main id="confirmation">
-    <h2>Contact Confirmation</h2>
+    <h2>Confirmation</h2>
     <p>Thank you!</p>
     <?php if (isset($_SESSION['technician'])): ?>
         <p>Saving <?php echo $_SESSION['technician']; ?> information.</p>
