@@ -14,7 +14,7 @@
     <p>Sports management software for the sports enthusiast</p>
     <nav>
         <ul>
-            <li><a href="index.php">Back to product list</a></li>
+            <li><a href="index.php">Back to list of technicians</a></li>
         </ul>
     </nav>
 </header>
