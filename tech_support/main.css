@@ -33,7 +33,7 @@ header nav ul{
     margin: 0 auto;
 }
 main {
-    margin: 0;
+    margin: 0 auto;
     padding: .5em 2em .25em;
 }
 footer {
@@ -91,16 +91,12 @@ nav ul li {
 a {
     color: #3333CC;
     font-weight: bold;
-
+    
 }
 a:hover {
     color: #3333CC;
 }
 
-table {
-    border: 1px solid #001963;
-    border-collapse: collapse;
-}
 td, th {
     border: 1px dashed #001963;
     padding: .2em .5em .2em .5em;
@@ -114,7 +110,7 @@ td, th {
 }
 
 form {
-    margin: 0;
+    margin: 0 auto;
 }
 select {
     width: 11em;
@@ -158,3 +154,42 @@ textarea {
     margin-left: .5em;
     width: 15em;
 }
+
+a{
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  table {
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Remove default space between table cells */
+  }
+  
+  th, td {
+    padding: 10px; /* Add padding inside each table cell */
+    border: 1px solid black; /* Add border to each cell for clarity */
+    text-align: left; /* Align text to the left inside table cells */
+  }
+  
+  th {
+    background-color: #ded9d9; /* Optional: Add background color to table headers */
+  }
+  
+  form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .option{
+    margin-top: 20px;
+    text-align: center;
+  }
