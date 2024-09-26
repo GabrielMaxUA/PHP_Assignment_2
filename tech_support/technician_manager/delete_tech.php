@@ -4,15 +4,13 @@
 require('../model/database.php'); // Include the database connection
 
 // Getting data from the form
-$productCode = filter_input(INPUT_POST, 'code', FILTER_SANITIZE_STRING);
+$techID = filter_input(INPUT_POST, 'techID', FILTER_VALIDATE_INT);
 
-if ($productCode && !empty($productCode)) {
-    echo "Product Code: " . htmlspecialchars($productCode) . "<br>";  // Display for debugging
-    
+if ($techID && !empty($techID)) {
     // Prepare the DELETE statement
-    $query = "DELETE FROM products WHERE productCode = :code";
+    $query = "DELETE FROM technicians WHERE techID = :techID";
     $statement = $db->prepare($query);
-    $statement->bindValue(':code', $productCode);
+    $statement->bindValue(':techID', $techID);
     
     try {
         // Execute the DELETE statement
